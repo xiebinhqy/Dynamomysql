@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Dynamomysql by xiebinhqy</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Dynamomysql</h1>
+        <p>dynamomysql</p>
+
+        <p class="view"><a href="https://github.com/xiebinhqy/Dynamomysql">View the Project on GitHub <small>xiebinhqy/Dynamomysql</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/xiebinhqy/Dynamomysql/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/xiebinhqy/Dynamomysql/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/xiebinhqy/Dynamomysql">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p><img src="clockwork-logo.png" alt="Image"></p>
+
+<p>Clockwork is a collection of custom nodes for the <a href="http://www.dynamobim.org">Dynamo</a> visual programming environment. It contains many Revit-related nodes, but also lots of nodes for various other purposes such as list management, mathematical operations, string operations, geometric operations (mainly bounding boxes, meshes, planes, points, surfaces, UVs and vectors) and paneling. Currently it consists of some 330+ nodes of which a large portion was previously published in a number of separate packages. Keeping all those nodes in a single package has made updates and maintenance much easier and has greatly reduced package dependencies. I had never set out to build so many custom nodes – somehow it just happened.</p>
+
+<p>If you like the package, please vote in support of it in Dynamo's package search tool. </p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Installation is simple - just use Dynamo's built-in package manager and search for <code>Clockwork</code>. If you have used some of my previous 0.6.3 packages, please remember to uninstall <em>all</em> of them (find a complete list <a href="https://github.com/CAAD-RWTH/ClockworkForDynamo/wiki/0.6.3-Packages-to-Uninstall">here</a>). Also, always make sure you have the correct version of Clockwork installed that corresponds to your installed version of Dynamo.</p>
+
+<h2>
+<a id="versions" class="anchor" href="#versions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Versions</h2>
+
+<p>The different versions are available as separate packages on the package manager. (So far each new major Dynamo version has introduced changes that prevented downward - and sometimes even upward - compatibility of nodes, hence the separate packages...)</p>
+
+<ul>
+<li>Clockwork for Dynamo 0.9.x: <a href="https://github.com/CAAD-RWTH/ClockworkForDynamo/wiki/Version-History#0903">0.90.3</a>
+</li>
+<li>Clockwork for Dynamo 0.8.2: <a href="https://github.com/CAAD-RWTH/ClockworkForDynamo/wiki/Version-History#0824">0.82.4</a>
+</li>
+<li>Clockwork for Dynamo 0.7.x: <a href="https://github.com/CAAD-RWTH/ClockworkForDynamo/wiki/Version-History#07547">0.75.47</a> - not supported any more</li>
+<li>Clockwork for Dynamo 0.6.3: <a href="https://github.com/CAAD-RWTH/ClockworkForDynamo/wiki/Version-History#0633">0.63.3</a> - not supported any more</li>
+</ul>
+
+<h2>
+<a id="renamed-recategorized-and-deprecated-nodes" class="anchor" href="#renamed-recategorized-and-deprecated-nodes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Renamed, recategorized and deprecated nodes</h2>
+
+<p>During migration from one Dynamo version to the next, I regularly recategorize and rename a lot of nodes. These changes are documented in an <a href="https://github.com/CAAD-RWTH/ClockworkForDynamo/raw/master/NodeList.xls">excel sheet</a> that contains a list of all nodes within the package. Nodes with <a href="https://github.com/CAAD-RWTH/ClockworkForDynamo/issues">pending issues</a> are highlighted in yellow.
+If you are missing a specific node, please consult the <a href="https://github.com/CAAD-RWTH/ClockworkForDynamo/wiki/Deprecated-Nodes">list of deprecated nodes</a>.</p>
+
+<h2>
+<a id="updates" class="anchor" href="#updates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Updates</h2>
+
+<p>Since Dynamo's package manager currently does not (yet) have an update notification infrastructure in place, you may want to follow me on <a href="https://twitter.com/a_dieckmann">twitter</a> for update notifications.</p>
+
+<h2>
+<a id="known-issues" class="anchor" href="#known-issues" aria-hidden="true"><span class="octicon octicon-link"></span></a>Known Issues</h2>
+
+<p>On this repository you can find a <a href="https://github.com/CAAD-RWTH/ClockworkForDynamo/issues">list of known issues and planned enhancements</a>. Should you find that one of the nodes in this package does not work (or could work better with improved functionality), please let me know by creating a new issue in that section. Also, if you happen to come across a built-in node that does exactly the same as one of the Clockwork nodes, please let me know so I can remove that particular node from the package - I am not trying to duplicate existing functionality.</p>
+
+<h2>
+<a id="material-on-this-repository" class="anchor" href="#material-on-this-repository" aria-hidden="true"><span class="octicon octicon-link"></span></a>Material on this repository</h2>
+
+<p>This repository contains the following:</p>
+
+<ul>
+<li>Directory <a href="package_samples">package_samples</a> contains simple examples for most of the nodes in Clockwork. I use them for occasional testing, but they should also help explain how to use each node. There are no samples for 0.8.x and I'm not sure if I'll find the time. Most of the samples are available in 0.7.x. If you cannot find a sample for a particular node, have a look at the 0.6.3 samples instead (they are, however, sorted according to their previous packages).</li>
+<li>Directory <a href="workflow_samples">workflow_samples</a> contains some sample workflows that I have published online somewhere before. I have also started to include some of the examples that I use for teaching Dynamo as well as some material presented at conferences. Almost all of these are available for Dynamo 0.7.x (as well as 0.6.3). Again, I do not know when/if I'll find the time to update them to a current version.</li>
+<li>Directory <a href="nodes">nodes</a> is the actual repository of the custom nodes that I use for versioning nodes in between publishing package updates to Dynamo's package manager - which means you will sometimes find nodes in here that haven't made it onto the package manager yet.</li>
+<li>Directory <a href="issues">issues</a> contains sample files for issues raised on the <a href="https://github.com/DynamoDS/Dynamo">Dynamo GitHub site</a>.</li>
+</ul>
+
+<h2>
+<a id="help-to-improve-clockwork" class="anchor" href="#help-to-improve-clockwork" aria-hidden="true"><span class="octicon octicon-link"></span></a>Help to improve Clockwork</h2>
+
+<p>If you're interested in contributing to Clockwork, just submit a <a href="https://github.com/CAAD-RWTH/ClockworkForDynamo/pulls">pull request</a>. It's not that hard - <a href="https://github.com/CAAD-RWTH/ClockworkForDynamo/graphs/contributors">some folks</a> have already done it. </p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/xiebinhqy">xiebinhqy</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
