@@ -1,0 +1,16 @@
+<Workspace Version="0.7.4.3245" X="30" Y="210.805547058824" zoom="1.03764705882353" Description="Determines the average vector of a list of vectors" Category="Clockwork.Geometry.Vector.Query" Name="Vector.Average" ID="ee6595e7-ac76-4d77-ac43-ec1d12d687ef">
+  <Elements>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="27c42fc4-1da5-480c-b79e-4c82af1b671d" nickname="Output" x="774" y="17.5633333333333" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="Vector" />
+    </Dynamo.Nodes.Output>
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="1d06ed8f-ee63-4510-8c9b-28683264b12b" nickname="Input" x="0" y="0" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="Vectors" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="eb8f634e-4178-4821-958a-e96c4dd93a9b" nickname="Code Block" x="182" y="4.21833333333333" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="vn = v.Normalized();&#xA;Vector.ByCoordinates(Math.Average(vn.X),Math.Average(vn.Y),Math.Average(vn.Z),true);" ShouldFocus="false" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="1d06ed8f-ee63-4510-8c9b-28683264b12b" start_index="0" end="eb8f634e-4178-4821-958a-e96c4dd93a9b" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="eb8f634e-4178-4821-958a-e96c4dd93a9b" start_index="1" end="27c42fc4-1da5-480c-b79e-4c82af1b671d" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+</Workspace>

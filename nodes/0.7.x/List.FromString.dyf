@@ -1,0 +1,16 @@
+<Workspace Version="0.7.5.3566" X="30" Y="336.591659712564" zoom="1.78303198887344" Description="Chops up a string into a list of characters" Category="Clockwork.Core.String.Create" Name="List.FromString" ID="f6d6a1d4-821a-48b5-b5bf-5c8ea521b96c">
+  <Elements>
+    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="6fb43efe-5a3d-49c4-a38a-a2e65eff0ed1" nickname="Code Block" x="166" y="4.21833333333333" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="startindex = 0..(String.Length(str)-1);&#xA;String.Substring(str,startindex,1);" ShouldFocus="false" />
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="8bf16332-c362-43ec-b2d2-27c581c9ce9d" nickname="Input" x="0" y="0" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="str" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="7ab5e069-1b9e-4d78-8bc8-294dd2109ae8" nickname="Output" x="653" y="17.5633333333333" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="list" />
+    </Dynamo.Nodes.Output>
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="6fb43efe-5a3d-49c4-a38a-a2e65eff0ed1" start_index="1" end="7ab5e069-1b9e-4d78-8bc8-294dd2109ae8" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="8bf16332-c362-43ec-b2d2-27c581c9ce9d" start_index="0" end="6fb43efe-5a3d-49c4-a38a-a2e65eff0ed1" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+</Workspace>

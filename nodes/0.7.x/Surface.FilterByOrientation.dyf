@@ -1,0 +1,152 @@
+<Workspace Version="0.7.5.3566" X="-114.065832440249" Y="204.295847008057" zoom="0.776449870251267" Description="Sorts surfaces in three lists based on their orientation (vertical, horizontal up &amp; horizontal down) and also returns three corresponding lists of booleans." Category="Clockwork.Geometry.Surface.Actions" Name="Surface.FilterByOrientation" ID="fa47dbf7-bb14-4f81-b318-e08a9f8ac341">
+  <Elements>
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="20c6f45c-db12-45ea-bfc1-b5e5ea9047c9" nickname="Input" x="116.972432379777" y="1.3355985508793" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="Face(s)" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="db73eaf3-90a7-44eb-b415-50c997d0b728" nickname="Output" x="1348.46723938788" y="0" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="Vertical" />
+    </Dynamo.Nodes.Output>
+    <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="9cacbdff-0e1f-4f22-9667-74bce0deac49" nickname="ReturnListOrSingleValue" x="1069" y="0" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <ID value="44ac4888-4aa4-49a9-9344-23b729c11df9" />
+      <Name value="ReturnListOrSingleValue" />
+      <Description value="If the item in input #1 is not a list, only the first item of the list in input #2 will be returned." />
+      <Inputs>
+        <Input value="item #1 (unknown)" />
+        <Input value="item #2 (list)" />
+      </Inputs>
+      <Outputs>
+        <Output value="" />
+      </Outputs>
+    </Dynamo.Nodes.Function>
+    <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="b63e611c-a0e2-4849-9825-d8feaa90b0e7" nickname="ReturnListOrSingleValue" x="1069" y="109" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <ID value="44ac4888-4aa4-49a9-9344-23b729c11df9" />
+      <Name value="ReturnListOrSingleValue" />
+      <Description value="If the item in input #1 is not a list, only the first item of the list in input #2 will be returned." />
+      <Inputs>
+        <Input value="item #1 (unknown)" />
+        <Input value="item #2 (list)" />
+      </Inputs>
+      <Outputs>
+        <Output value="" />
+      </Outputs>
+    </Dynamo.Nodes.Function>
+    <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="9d469937-8e74-442e-ae0f-ba4eab8b8987" nickname="ReturnListOrSingleValue" x="1069" y="218" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <ID value="44ac4888-4aa4-49a9-9344-23b729c11df9" />
+      <Name value="ReturnListOrSingleValue" />
+      <Description value="If the item in input #1 is not a list, only the first item of the list in input #2 will be returned." />
+      <Inputs>
+        <Input value="item #1 (unknown)" />
+        <Input value="item #2 (list)" />
+      </Inputs>
+      <Outputs>
+        <Output value="" />
+      </Outputs>
+    </Dynamo.Nodes.Function>
+    <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="d2b5246d-ffac-476c-8726-f0224d3b9e45" nickname="ReturnListOrSingleValue" x="1069" y="328" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <ID value="44ac4888-4aa4-49a9-9344-23b729c11df9" />
+      <Name value="ReturnListOrSingleValue" />
+      <Description value="If the item in input #1 is not a list, only the first item of the list in input #2 will be returned." />
+      <Inputs>
+        <Input value="item #1 (unknown)" />
+        <Input value="item #2 (list)" />
+      </Inputs>
+      <Outputs>
+        <Output value="" />
+      </Outputs>
+    </Dynamo.Nodes.Function>
+    <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="230988fb-6863-4f2b-9b5e-2ae01d034b4a" nickname="ReturnListOrSingleValue" x="1069" y="437" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <ID value="44ac4888-4aa4-49a9-9344-23b729c11df9" />
+      <Name value="ReturnListOrSingleValue" />
+      <Description value="If the item in input #1 is not a list, only the first item of the list in input #2 will be returned." />
+      <Inputs>
+        <Input value="item #1 (unknown)" />
+        <Input value="item #2 (list)" />
+      </Inputs>
+      <Outputs>
+        <Output value="" />
+      </Outputs>
+    </Dynamo.Nodes.Function>
+    <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="c730b241-b2c4-4bad-9412-541cadb37370" nickname="ReturnListOrSingleValue" x="1069" y="546" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <ID value="44ac4888-4aa4-49a9-9344-23b729c11df9" />
+      <Name value="ReturnListOrSingleValue" />
+      <Description value="If the item in input #1 is not a list, only the first item of the list in input #2 will be returned." />
+      <Inputs>
+        <Input value="item #1 (unknown)" />
+        <Input value="item #2 (list)" />
+      </Inputs>
+      <Outputs>
+        <Output value="" />
+      </Outputs>
+    </Dynamo.Nodes.Function>
+    <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="1756e85f-bc0b-469e-ac10-68ad07c55616" nickname="Math.AlmostZero" x="231.15980684575" y="257.514330701661" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <ID value="7203b34a-da51-4672-8993-3591ebf9537d" />
+      <Name value="Math.AlmostZero" />
+      <Description value="Returns a feasable computational tolerance to zero (1.0e-9 or a billionth of 1) for use in calculations. More background info: https://github.com/ikeough/Dynamo/issues/879" />
+      <Inputs />
+      <Outputs>
+        <Output value="1.0e-9" />
+      </Outputs>
+    </Dynamo.Nodes.Function>
+    <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="4166aea5-8b6b-4c47-b682-b4c9c05a111d" nickname="Vector.ZAxisNegative" x="207.486814578414" y="335.563281836357" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <ID value="4cb9a1f2-5c84-47cf-b976-28b92bd7f882" />
+      <Name value="Vector.ZAxisNegative" />
+      <Description value="Returns an XYZ of 0,0,-1" />
+      <Inputs />
+      <Outputs>
+        <Output value="0,0,-1" />
+      </Outputs>
+    </Dynamo.Nodes.Function>
+    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="5297ad22-96c5-4893-8eec-a55e84a94682" nickname="Code Block" x="448" y="189.056666666667" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="vec = surf.NormalAtParameter(0.5,0.5);&#xA;z = vec.Z;&#xA;// Vertical&#xA;mask1 = z &gt;= (0 - almostzero) &amp;&amp; z &lt;= (0 + almostzero);&#xA;List.FilterByBoolMask(surf,mask1)[&quot;in&quot;];&#xA;// Horizontal up&#xA;mask2 = vec.IsAlmostEqualTo(Vector.ZAxis());&#xA;List.FilterByBoolMask(surf,mask2)[&quot;in&quot;];&#xA;// Horizontal down&#xA;mask3 = vec.IsAlmostEqualTo(ZNeg);&#xA;List.FilterByBoolMask(surf,mask3)[&quot;in&quot;];" ShouldFocus="false" />
+    <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="4da458ee-de4e-45fa-84f3-6dd68d0454c6" nickname="Turn Into List" x="243" y="184.838333333333" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <ID value="cd09ad33-8c34-4850-ac26-24448d92c38f" />
+      <Name value="Turn Into List" />
+      <Description value="Turns an element (or a nested list) into a flat list" />
+      <Inputs>
+        <Input value="item" />
+      </Inputs>
+      <Outputs>
+        <Output value="" />
+      </Outputs>
+    </Dynamo.Nodes.Function>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="4a88381e-db5e-4e0d-9dd2-2db8e45d3649" nickname="Output" x="1350.21237841976" y="110.287913152302" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="IsVertical" />
+    </Dynamo.Nodes.Output>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="53e8c6a7-9e23-4bec-b50c-6133f28c0bf4" nickname="Output" x="1350.21237841976" y="219.287913152302" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="Horizontal Up" />
+    </Dynamo.Nodes.Output>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="0a296e00-d861-4844-b011-a8fb08067cc9" nickname="Output" x="1348.92446526746" y="328" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="IsHorizontalUp" />
+    </Dynamo.Nodes.Output>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="6115c652-68f2-4962-aaec-2a3467fe4a5e" nickname="Output" x="1352.78820472436" y="438.287913152302" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="Horizontal Down" />
+    </Dynamo.Nodes.Output>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="99a5d194-d9f5-4881-b79c-f6e2ea56e816" nickname="Output" x="1352.78820472436" y="547.287913152302" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="IsHorizontalDown" />
+    </Dynamo.Nodes.Output>
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="20c6f45c-db12-45ea-bfc1-b5e5ea9047c9" start_index="0" end="9cacbdff-0e1f-4f22-9667-74bce0deac49" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="20c6f45c-db12-45ea-bfc1-b5e5ea9047c9" start_index="0" end="b63e611c-a0e2-4849-9825-d8feaa90b0e7" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="20c6f45c-db12-45ea-bfc1-b5e5ea9047c9" start_index="0" end="9d469937-8e74-442e-ae0f-ba4eab8b8987" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="20c6f45c-db12-45ea-bfc1-b5e5ea9047c9" start_index="0" end="d2b5246d-ffac-476c-8726-f0224d3b9e45" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="20c6f45c-db12-45ea-bfc1-b5e5ea9047c9" start_index="0" end="230988fb-6863-4f2b-9b5e-2ae01d034b4a" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="20c6f45c-db12-45ea-bfc1-b5e5ea9047c9" start_index="0" end="c730b241-b2c4-4bad-9412-541cadb37370" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="20c6f45c-db12-45ea-bfc1-b5e5ea9047c9" start_index="0" end="4da458ee-de4e-45fa-84f3-6dd68d0454c6" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="9cacbdff-0e1f-4f22-9667-74bce0deac49" start_index="0" end="db73eaf3-90a7-44eb-b415-50c997d0b728" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="b63e611c-a0e2-4849-9825-d8feaa90b0e7" start_index="0" end="4a88381e-db5e-4e0d-9dd2-2db8e45d3649" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="9d469937-8e74-442e-ae0f-ba4eab8b8987" start_index="0" end="53e8c6a7-9e23-4bec-b50c-6133f28c0bf4" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="d2b5246d-ffac-476c-8726-f0224d3b9e45" start_index="0" end="0a296e00-d861-4844-b011-a8fb08067cc9" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="230988fb-6863-4f2b-9b5e-2ae01d034b4a" start_index="0" end="6115c652-68f2-4962-aaec-2a3467fe4a5e" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="c730b241-b2c4-4bad-9412-541cadb37370" start_index="0" end="99a5d194-d9f5-4881-b79c-f6e2ea56e816" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="1756e85f-bc0b-469e-ac10-68ad07c55616" start_index="0" end="5297ad22-96c5-4893-8eec-a55e84a94682" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4166aea5-8b6b-4c47-b682-b4c9c05a111d" start_index="0" end="5297ad22-96c5-4893-8eec-a55e84a94682" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="5297ad22-96c5-4893-8eec-a55e84a94682" start_index="2" end="b63e611c-a0e2-4849-9825-d8feaa90b0e7" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="5297ad22-96c5-4893-8eec-a55e84a94682" start_index="3" end="9cacbdff-0e1f-4f22-9667-74bce0deac49" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="5297ad22-96c5-4893-8eec-a55e84a94682" start_index="4" end="d2b5246d-ffac-476c-8726-f0224d3b9e45" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="5297ad22-96c5-4893-8eec-a55e84a94682" start_index="5" end="9d469937-8e74-442e-ae0f-ba4eab8b8987" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="5297ad22-96c5-4893-8eec-a55e84a94682" start_index="6" end="c730b241-b2c4-4bad-9412-541cadb37370" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="5297ad22-96c5-4893-8eec-a55e84a94682" start_index="7" end="230988fb-6863-4f2b-9b5e-2ae01d034b4a" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4da458ee-de4e-45fa-84f3-6dd68d0454c6" start_index="0" end="5297ad22-96c5-4893-8eec-a55e84a94682" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+</Workspace>

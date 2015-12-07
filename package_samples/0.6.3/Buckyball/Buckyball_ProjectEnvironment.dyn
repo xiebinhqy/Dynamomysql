@@ -1,0 +1,56 @@
+<Workspace Version="0.6.3.7375" X="-1948.17127601755" Y="223.957458789934" zoom="0.829729883343099" Description="" Category="" Name="Home">
+  <Elements>
+    <Dynamo.Nodes.DoubleSliderInput type="Dynamo.Nodes.DoubleSliderInput" guid="1bea837c-68c2-4f6b-aa85-848f238708a5" nickname="Number Slider" x="2130.81714571268" y="1009.68519394103" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Double value="25" min="0" max="50" />
+    </Dynamo.Nodes.DoubleSliderInput>
+    <Dynamo.Nodes.Watch type="Dynamo.Nodes.Watch" guid="40477a18-8bab-4ecf-b44c-6fbdb64e78f3" nickname="Watch" x="2927.7867129358" y="-186.022813680594" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <Dynamo.Nodes.Watch type="Dynamo.Nodes.Watch" guid="b4460fc3-fdf3-453b-a6f1-f9f60bae33c0" nickname="Watch" x="2929.27164387983" y="183.653757045224" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <Dynamo.Nodes.Watch type="Dynamo.Nodes.Watch" guid="6d049c11-cc7a-4906-bcb3-03dec8e8bdc3" nickname="Watch" x="2927.03666668225" y="549.913296572452" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="3dacf85f-501c-4656-b852-ab739594ba11" nickname="Buckyball" x="2512.23010556106" y="932.425354170996" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <ID value="498ac300-3e75-429d-9b12-495a387293f1" />
+      <Name value="Buckyball" />
+      <Description value="Returns all the data necessary for modeling a truncated icosahedron (vertices and struts) as well as the surface area and volume. Radius and origin of the object can be specified." />
+      <Inputs>
+        <Input value="Origin" />
+        <Input value="Radius" />
+      </Inputs>
+      <Outputs>
+        <Output value="Vertices" />
+        <Output value="Struts (Up Vector)" />
+        <Output value="Struts (Lines)" />
+        <Output value="Struts (XYZs)" />
+        <Output value="Surface Area" />
+        <Output value="Volume" />
+      </Outputs>
+    </Dynamo.Nodes.Function>
+    <Dynamo.Nodes.Watch type="Dynamo.Nodes.Watch" guid="9cab03d3-1022-4aad-951b-1e7dee7053b4" nickname="Watch" x="2928.18418536755" y="1291.37983045522" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <Dynamo.Nodes.Watch type="Dynamo.Nodes.Watch" guid="a00bd98e-eb84-4c4e-9ead-b63182823a7b" nickname="Watch" x="2931.36040952897" y="1378.73419022347" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <Dynamo.Nodes.Watch type="Dynamo.Nodes.Watch" guid="071ab786-5a31-463e-8bd0-972fc94e05f8" nickname="Watch" x="2925.75860668989" y="919.082210112894" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <Dynamo.Nodes.StructuralFramingSelector type="Dynamo.Nodes.StructuralFramingSelector" guid="7eb9c82c-bd4f-45c6-889c-226caaea8f39" nickname="Select Structural Framing Type" x="2107.23295327698" y="817.384142255891" isVisible="true" isUpstreamVisible="true" lacing="Disabled" index="0" />
+    <Dynamo.Nodes.StructuralFraming type="Dynamo.Nodes.StructuralFraming" guid="cbf097a2-e2ea-4a76-90eb-e9111d4b45fb" nickname="Structural Framing" x="3434.13490000561" y="526.122579962932" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Run />
+    </Dynamo.Nodes.StructuralFraming>
+    <Dynamo.Nodes.Xyz type="Dynamo.Nodes.Xyz" guid="d656eb72-9110-496e-8f28-738c09ac058b" nickname="XYZ" x="2364.61490273218" y="886.84873520892" isVisible="true" isUpstreamVisible="true" lacing="Longest">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.Xyz>
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="1bea837c-68c2-4f6b-aa85-848f238708a5" start_index="0" end="3dacf85f-501c-4656-b852-ab739594ba11" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="b4460fc3-fdf3-453b-a6f1-f9f60bae33c0" start_index="0" end="cbf097a2-e2ea-4a76-90eb-e9111d4b45fb" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="6d049c11-cc7a-4906-bcb3-03dec8e8bdc3" start_index="0" end="cbf097a2-e2ea-4a76-90eb-e9111d4b45fb" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3dacf85f-501c-4656-b852-ab739594ba11" start_index="0" end="40477a18-8bab-4ecf-b44c-6fbdb64e78f3" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3dacf85f-501c-4656-b852-ab739594ba11" start_index="1" end="b4460fc3-fdf3-453b-a6f1-f9f60bae33c0" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3dacf85f-501c-4656-b852-ab739594ba11" start_index="2" end="6d049c11-cc7a-4906-bcb3-03dec8e8bdc3" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3dacf85f-501c-4656-b852-ab739594ba11" start_index="3" end="071ab786-5a31-463e-8bd0-972fc94e05f8" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3dacf85f-501c-4656-b852-ab739594ba11" start_index="4" end="9cab03d3-1022-4aad-951b-1e7dee7053b4" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3dacf85f-501c-4656-b852-ab739594ba11" start_index="5" end="a00bd98e-eb84-4c4e-9ead-b63182823a7b" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="7eb9c82c-bd4f-45c6-889c-226caaea8f39" start_index="0" end="cbf097a2-e2ea-4a76-90eb-e9111d4b45fb" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="d656eb72-9110-496e-8f28-738c09ac058b" start_index="0" end="3dacf85f-501c-4656-b852-ab739594ba11" end_index="0" portType="0" />
+  </Connectors>
+  <Notes>
+    <Dynamo.Models.NoteModel text="Filter out all points that do not have a distnace of 2 to the first point." x="436.753917964188" y="315.881232805816" />
+    <Dynamo.Models.NoteModel text="Measure distance between first point in list and all other points" x="272.908168203193" y="154.22666817358" />
+  </Notes>
+</Workspace>

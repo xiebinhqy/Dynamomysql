@@ -1,0 +1,32 @@
+<Workspace Version="0.7.5.3566" X="134.334617784711" Y="298.17408438368" zoom="0.971063734290844" Description="Returns true if any item in a list of booleans is true." Category="Clockwork.Core.List.Query" Name="List.AnyTrue" ID="605e21d1-67ee-4465-8543-67f7781dd84d">
+  <Elements>
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="50fe5246-c384-4d28-8339-74425cf49cbd" nickname="Input" x="59.0889235569423" y="32.1513260530422" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="seq" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="61d7a7e2-f23b-482e-896a-595747b37775" nickname="Output" x="1028.88299531981" y="66.8892355694228" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="any?" />
+    </Dynamo.Nodes.Output>
+    <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="001718c6-f598-45e2-8b35-2e56c55703f9" nickname="Turn Into List" x="192" y="33" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <ID value="cd09ad33-8c34-4850-ac26-24448d92c38f" />
+      <Name value="Turn Into List" />
+      <Description value="Turns an element (or a nested list) into a flat list" />
+      <Inputs>
+        <Input value="item" />
+      </Inputs>
+      <Outputs>
+        <Output value="" />
+      </Outputs>
+    </Dynamo.Nodes.Function>
+    <DSCoreNodesUI.Formula type="DSCoreNodesUI.Formula" guid="654e98b3-33cf-4331-9e9d-6cb96f64707b" nickname="Formula" x="205.073322932917" y="108.763021320853" isVisible="true" isUpstreamVisible="true" lacing="Shortest">
+      <FormulaText>x=1</FormulaText>
+    </DSCoreNodesUI.Formula>
+    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="defa74a1-73ff-4221-86b7-6fb65f479ffe" nickname="Code Block" x="377.882995319813" y="71.1075689027561" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="List.IsEmpty(seq) ? false : TrueForAny(seq,predicate);" ShouldFocus="false" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="50fe5246-c384-4d28-8339-74425cf49cbd" start_index="0" end="001718c6-f598-45e2-8b35-2e56c55703f9" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="001718c6-f598-45e2-8b35-2e56c55703f9" start_index="0" end="defa74a1-73ff-4221-86b7-6fb65f479ffe" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="654e98b3-33cf-4331-9e9d-6cb96f64707b" start_index="0" end="defa74a1-73ff-4221-86b7-6fb65f479ffe" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="defa74a1-73ff-4221-86b7-6fb65f479ffe" start_index="0" end="61d7a7e2-f23b-482e-896a-595747b37775" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+</Workspace>

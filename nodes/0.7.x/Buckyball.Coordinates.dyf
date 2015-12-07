@@ -1,0 +1,94 @@
+<Workspace Version="0.7.5.3566" X="306.073123256165" Y="30" zoom="0.522443631701983" Description="Returns the coordinates of all the vertices of an (unscaled) truncated icosahedron." Category="Clockwork.Geometry.Buckyball.Helpers" Name="Buckyball.Coordinates" ID="1fd0d562-bbfc-4a4a-bfb7-bd17bd0fa6d0">
+  <Elements>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="08d31378-c20a-4268-908e-87d27cfc67d1" nickname="Point.ByCoordinates" x="607" y="1284.50666666667" isVisible="true" isUpstreamVisible="true" lacing="CrossProduct" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="d04f6ddd-3123-47af-bc3d-816b1d096a1e" nickname="Point.ByCoordinates" x="607" y="1123.94333333333" isVisible="true" isUpstreamVisible="true" lacing="CrossProduct" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="290174f0-860d-478d-82d1-1bceca1430f5" nickname="Point.ByCoordinates" x="607" y="963.38" isVisible="true" isUpstreamVisible="true" lacing="CrossProduct" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="ea413ed0-6828-4b3a-bb14-795c0b59b9d2" nickname="Point.ByCoordinates" x="607" y="802.816666666667" isVisible="true" isUpstreamVisible="true" lacing="CrossProduct" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="467b04c2-531d-4254-8014-d686c134e305" nickname="Point.ByCoordinates" x="607" y="642.253333333333" isVisible="true" isUpstreamVisible="true" lacing="CrossProduct" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="e6d61d77-587a-4cfe-a688-0d707e1584a1" nickname="Point.ByCoordinates" x="607" y="481.69" isVisible="true" isUpstreamVisible="true" lacing="CrossProduct" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="fa875025-0d2c-463f-ba45-7af87f1a2573" nickname="Point.ByCoordinates" x="607" y="321.126666666667" isVisible="true" isUpstreamVisible="true" lacing="CrossProduct" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="f5601bf5-aae6-4dbe-b79a-bceef5e3835f" nickname="Point.ByCoordinates" x="607" y="160.563333333333" isVisible="true" isUpstreamVisible="true" lacing="CrossProduct" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="3699b729-b20b-43d7-b125-6b442f16239f" nickname="Point.ByCoordinates" x="607" y="0" isVisible="true" isUpstreamVisible="true" lacing="CrossProduct" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="3f304bdd-1ce8-4150-b85b-c7e24724f311" nickname="Output" x="1322" y="572" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="Points" />
+    </Dynamo.Nodes.Output>
+    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="f6404152-7c36-41b1-86f9-1df2da9d8b74" nickname="Code Block" x="0" y="531.965" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="// The important thing in this node is to set the lacing options of all Point nodes to cross product.&#xA;phi = Math.GoldenRatio;&#xA;{0};&#xA;{1,-1};&#xA;{3*phi,-3*phi};&#xA;{2,-2};&#xA;{1+2*phi,-(1+2*phi)};&#xA;{phi,-phi};&#xA;{2+phi,-(2+phi)};&#xA;{2*phi,-2*phi};" ShouldFocus="false" />
+    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="367036fe-380b-4773-b69c-3fb7d621f60c" nickname="Code Block" x="845" y="576.218333333333" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="Flatten({p1,p2,p3,p4,p5,p6,p7,p8,p9});" ShouldFocus="false" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="08d31378-c20a-4268-908e-87d27cfc67d1" start_index="0" end="367036fe-380b-4773-b69c-3fb7d621f60c" end_index="8" portType="0" />
+    <Dynamo.Models.ConnectorModel start="d04f6ddd-3123-47af-bc3d-816b1d096a1e" start_index="0" end="367036fe-380b-4773-b69c-3fb7d621f60c" end_index="7" portType="0" />
+    <Dynamo.Models.ConnectorModel start="290174f0-860d-478d-82d1-1bceca1430f5" start_index="0" end="367036fe-380b-4773-b69c-3fb7d621f60c" end_index="6" portType="0" />
+    <Dynamo.Models.ConnectorModel start="ea413ed0-6828-4b3a-bb14-795c0b59b9d2" start_index="0" end="367036fe-380b-4773-b69c-3fb7d621f60c" end_index="5" portType="0" />
+    <Dynamo.Models.ConnectorModel start="467b04c2-531d-4254-8014-d686c134e305" start_index="0" end="367036fe-380b-4773-b69c-3fb7d621f60c" end_index="4" portType="0" />
+    <Dynamo.Models.ConnectorModel start="e6d61d77-587a-4cfe-a688-0d707e1584a1" start_index="0" end="367036fe-380b-4773-b69c-3fb7d621f60c" end_index="3" portType="0" />
+    <Dynamo.Models.ConnectorModel start="fa875025-0d2c-463f-ba45-7af87f1a2573" start_index="0" end="367036fe-380b-4773-b69c-3fb7d621f60c" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f5601bf5-aae6-4dbe-b79a-bceef5e3835f" start_index="0" end="367036fe-380b-4773-b69c-3fb7d621f60c" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3699b729-b20b-43d7-b125-6b442f16239f" start_index="0" end="367036fe-380b-4773-b69c-3fb7d621f60c" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="1" end="3699b729-b20b-43d7-b125-6b442f16239f" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="1" end="f5601bf5-aae6-4dbe-b79a-bceef5e3835f" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="1" end="fa875025-0d2c-463f-ba45-7af87f1a2573" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="2" end="3699b729-b20b-43d7-b125-6b442f16239f" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="2" end="f5601bf5-aae6-4dbe-b79a-bceef5e3835f" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="2" end="fa875025-0d2c-463f-ba45-7af87f1a2573" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="2" end="290174f0-860d-478d-82d1-1bceca1430f5" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="2" end="d04f6ddd-3123-47af-bc3d-816b1d096a1e" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="2" end="08d31378-c20a-4268-908e-87d27cfc67d1" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="3" end="3699b729-b20b-43d7-b125-6b442f16239f" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="3" end="f5601bf5-aae6-4dbe-b79a-bceef5e3835f" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="3" end="fa875025-0d2c-463f-ba45-7af87f1a2573" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="4" end="e6d61d77-587a-4cfe-a688-0d707e1584a1" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="4" end="467b04c2-531d-4254-8014-d686c134e305" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="4" end="ea413ed0-6828-4b3a-bb14-795c0b59b9d2" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="5" end="e6d61d77-587a-4cfe-a688-0d707e1584a1" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="5" end="467b04c2-531d-4254-8014-d686c134e305" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="5" end="ea413ed0-6828-4b3a-bb14-795c0b59b9d2" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="6" end="e6d61d77-587a-4cfe-a688-0d707e1584a1" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="6" end="467b04c2-531d-4254-8014-d686c134e305" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="6" end="ea413ed0-6828-4b3a-bb14-795c0b59b9d2" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="7" end="290174f0-860d-478d-82d1-1bceca1430f5" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="7" end="d04f6ddd-3123-47af-bc3d-816b1d096a1e" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="7" end="08d31378-c20a-4268-908e-87d27cfc67d1" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="8" end="290174f0-860d-478d-82d1-1bceca1430f5" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="8" end="d04f6ddd-3123-47af-bc3d-816b1d096a1e" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f6404152-7c36-41b1-86f9-1df2da9d8b74" start_index="8" end="08d31378-c20a-4268-908e-87d27cfc67d1" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="367036fe-380b-4773-b69c-3fb7d621f60c" start_index="0" end="3f304bdd-1ce8-4150-b85b-c7e24724f311" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+</Workspace>

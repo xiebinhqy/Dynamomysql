@@ -1,0 +1,28 @@
+<Workspace Version="0.7.5.3566" X="136.748499015211" Y="260.403390863539" zoom="1.92251981770833" Description="Creates a Fibonacci row from a starting list (last two values) of a given length (starting values do *not* count toward length)." Category="Clockwork.Core.List.Create" Name="List.FibonacciFromList" ID="9f99471e-548a-4634-a7f0-dc4cd24690aa">
+  <Elements>
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="c5309892-0ce1-400c-a972-7a74f4840836" nickname="Input" x="0" y="0" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="initialList" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="09146080-1582-48bb-bc11-102391e3aefd" nickname="Input" x="0" y="84" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="length" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="d9e81917-5f94-45ce-9217-b7fa3e388343" nickname="Output" x="414" y="29" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="list" />
+    </Dynamo.Nodes.Output>
+    <DSIronPythonNode.PythonNode type="DSIronPythonNode.PythonNode" guid="cb75c46a-91f1-40bd-b0d3-bad62a459b52" nickname="Python Script" x="190" y="29" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="2">
+      <Script>fibseq = IN[0]
+iterations = IN[1]
+counter = 0
+while counter &lt; iterations:
+	fibseq.append(fibseq[len(fibseq)-2] + fibseq[len(fibseq)-1])
+	counter += 1
+OUT = fibseq</Script>
+    </DSIronPythonNode.PythonNode>
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="c5309892-0ce1-400c-a972-7a74f4840836" start_index="0" end="cb75c46a-91f1-40bd-b0d3-bad62a459b52" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="09146080-1582-48bb-bc11-102391e3aefd" start_index="0" end="cb75c46a-91f1-40bd-b0d3-bad62a459b52" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="cb75c46a-91f1-40bd-b0d3-bad62a459b52" start_index="0" end="d9e81917-5f94-45ce-9217-b7fa3e388343" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+</Workspace>

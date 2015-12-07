@@ -1,0 +1,75 @@
+<Workspace Version="0.7.5.3566" X="-550.951395824617" Y="111.69403426192" zoom="0.748045576276342" Description="Returns all design options in the model, grouped by design option set" Category="Clockwork.Revit.Document.Query" Name="Document.DesignOptions" ID="a6d063a5-0ecf-400b-9c91-47023e8408d7">
+  <Elements>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="397786fc-5131-44d1-8c39-e5626e6789be" nickname="Output" x="2114.88519633983" y="359.864315322304" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="DesignOptionSets" />
+    </Dynamo.Nodes.Output>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="66ad905a-fb60-42a3-bf9e-4d072fe243c3" nickname="Output" x="1789.44540583955" y="283.873836896376" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="DesignOptions" />
+    </Dynamo.Nodes.Output>
+    <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="58926681-d414-408e-8471-5595b3da4deb" nickname="Element.ByID" x="1787.56364331794" y="359.887122204376" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <ID value="a4dd8f6e-689f-4998-b8ef-4a04146d12c2" />
+      <Name value="Element.ByID" />
+      <Description value="Gets the Revit element(s) for a list of IDs (or a single ID)" />
+      <Inputs>
+        <Input value="ID(s) or UniqueId(s)" />
+      </Inputs>
+      <Outputs>
+        <Output value="Element(s)" />
+        <Output value="unmatched" />
+      </Outputs>
+    </Dynamo.Nodes.Function>
+    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="ac706301-3546-4bb3-a715-b90ada1ef7f0" nickname="Code Block" x="1360.9251137878" y="306.669666439785" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="seq2 = List.Transpose(seq1);&#xA;seq2[0];&#xA;List.UniqueItems(Flatten(seq2[1]));" ShouldFocus="false" />
+    <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="4202b182-f744-46bc-ac8c-272c728691b7" nickname="List.GroupListOfListsByKey" x="1122.34774839516" y="302.280284909195" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <ID value="1af622be-33ad-4be7-a0c3-cfa6c2338eed" />
+      <Name value="List.GroupListOfListsByKey" />
+      <Description value="Groups a list of lists by one of its keys" />
+      <Inputs>
+        <Input value="list" />
+        <Input value="key index" />
+      </Inputs>
+      <Outputs>
+        <Output value="list" />
+      </Outputs>
+    </Dynamo.Nodes.Function>
+    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="ec6cf24c-fc6c-4b5d-a3c0-9721621a4472" nickname="Code Block" x="479.373114171219" y="310.801851427216" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="{options, List.IsEmpty(options) ? dos : elem.UniqueId};&#xA;1;" ShouldFocus="false" />
+    <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="e5c7930e-1c5a-47b7-be8f-d31f2ed30146" nickname="DesignOption.DesignOptionSet" x="112.586221509558" y="372.650395904536" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <ID value="c135da75-96f9-404d-9643-3b3d0b998dc1" />
+      <Name value="DesignOption.DesignOptionSet" />
+      <Description value="Returns the design option set of a given design option" />
+      <Inputs>
+        <Input value="DesignOption(s)" />
+      </Inputs>
+      <Outputs>
+        <Output value="DesignOptionSet(s)" />
+      </Outputs>
+    </Dynamo.Nodes.Function>
+    <DSIronPythonNode.PythonNode type="DSIronPythonNode.PythonNode" guid="06b2a024-ddf3-4b2a-8781-7a165e95e98e" nickname="Python Script" x="-68.8570637195411" y="307.271811226959" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="0">
+      <Script>import clr
+clr.AddReference('RevitAPI')
+from Autodesk.Revit.DB import *
+import Autodesk
+
+clr.AddReference("RevitServices")
+import RevitServices
+from RevitServices.Persistence import DocumentManager
+
+doc = DocumentManager.Instance.CurrentDBDocument
+collector = FilteredElementCollector(doc)
+desopts = collector.OfClass(DesignOption).ToElements()
+OUT = desopts</Script>
+    </DSIronPythonNode.PythonNode>
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="58926681-d414-408e-8471-5595b3da4deb" start_index="0" end="397786fc-5131-44d1-8c39-e5626e6789be" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="ac706301-3546-4bb3-a715-b90ada1ef7f0" start_index="1" end="66ad905a-fb60-42a3-bf9e-4d072fe243c3" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="ac706301-3546-4bb3-a715-b90ada1ef7f0" start_index="2" end="58926681-d414-408e-8471-5595b3da4deb" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4202b182-f744-46bc-ac8c-272c728691b7" start_index="0" end="ac706301-3546-4bb3-a715-b90ada1ef7f0" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="ec6cf24c-fc6c-4b5d-a3c0-9721621a4472" start_index="0" end="4202b182-f744-46bc-ac8c-272c728691b7" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="ec6cf24c-fc6c-4b5d-a3c0-9721621a4472" start_index="1" end="4202b182-f744-46bc-ac8c-272c728691b7" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="e5c7930e-1c5a-47b7-be8f-d31f2ed30146" start_index="0" end="ec6cf24c-fc6c-4b5d-a3c0-9721621a4472" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="e5c7930e-1c5a-47b7-be8f-d31f2ed30146" start_index="0" end="ec6cf24c-fc6c-4b5d-a3c0-9721621a4472" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="06b2a024-ddf3-4b2a-8781-7a165e95e98e" start_index="0" end="ec6cf24c-fc6c-4b5d-a3c0-9721621a4472" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="06b2a024-ddf3-4b2a-8781-7a165e95e98e" start_index="0" end="e5c7930e-1c5a-47b7-be8f-d31f2ed30146" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+</Workspace>

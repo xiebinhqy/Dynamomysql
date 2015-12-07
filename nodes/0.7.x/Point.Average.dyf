@@ -1,0 +1,16 @@
+<Workspace Version="0.7.5.3566" X="30" Y="349.029189456996" zoom="1.5243757431629" Description="Determines the average of a list of points" Category="Clockwork.Geometry.Point.Query" Name="Point.Average" ID="eef82f03-2a97-41cd-986a-0ce973604ab8">
+  <Elements>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="27c42fc4-1da5-480c-b79e-4c82af1b671d" nickname="Output" x="772" y="0" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="Point" />
+    </Dynamo.Nodes.Output>
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="1d06ed8f-ee63-4510-8c9b-28683264b12b" nickname="Input" x="0" y="0" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="Points" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="5c0dd9bc-00a7-420b-a0b0-b4cb4e0d7ad7" nickname="Code Block" x="175" y="4.21833333333333" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="Point.ByCoordinates(Math.Average(pts.X),Math.Average(pts.Y),Math.Average(pts.Z));" ShouldFocus="false" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="1d06ed8f-ee63-4510-8c9b-28683264b12b" start_index="0" end="5c0dd9bc-00a7-420b-a0b0-b4cb4e0d7ad7" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="5c0dd9bc-00a7-420b-a0b0-b4cb4e0d7ad7" start_index="0" end="27c42fc4-1da5-480c-b79e-4c82af1b671d" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+</Workspace>

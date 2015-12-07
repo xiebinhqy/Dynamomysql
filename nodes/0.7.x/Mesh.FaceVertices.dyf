@@ -1,0 +1,16 @@
+<Workspace Version="0.7.4.3245" X="30" Y="164.499782608696" zoom="1.27826086956522" Description="Gets the vertices of each face of a given mesh" Category="Clockwork.Geometry.Mesh.Query" Name="Mesh.FaceVertices" ID="21e0126f-dca2-47a0-84f3-b403bc0e6d71">
+  <Elements>
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="90f80594-ced4-4c1a-81ce-8088de4cd33b" nickname="Input" x="0" y="0" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="Mesh" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="eab0df2d-0d15-4390-bc53-ee706609e68b" nickname="Output" x="606" y="87.8166666666666" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="Vertices" />
+    </Dynamo.Nodes.Output>
+    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="8680c803-a8e4-4eb7-abc5-008c1d2e5c51" nickname="Code Block" x="171" y="4.21833333333328" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="vp = m.VertexPositions;&#xA;fi = m.FaceIndices;&#xA;a = List.GetItemAtIndex(vp,fi.A);&#xA;b = List.GetItemAtIndex(vp,fi.B);&#xA;c = List.GetItemAtIndex(vp,fi.C);&#xA;List.Transpose({a,b,c});" ShouldFocus="false" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="90f80594-ced4-4c1a-81ce-8088de4cd33b" start_index="0" end="8680c803-a8e4-4eb7-abc5-008c1d2e5c51" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="8680c803-a8e4-4eb7-abc5-008c1d2e5c51" start_index="5" end="eab0df2d-0d15-4390-bc53-ee706609e68b" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+</Workspace>
